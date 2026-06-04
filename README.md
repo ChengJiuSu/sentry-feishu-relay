@@ -53,4 +53,5 @@ docker-compose down && docker-compose up -d
 ```
 <img width="1442" height="1254" alt="6a45e565-5c90-485f-95c8-882746edcd40" src="https://github.com/user-attachments/assets/8d54f684-a5e5-411c-9ec8-1fd4cac1f62c" />
 <img width="1433" height="1272" alt="3e8ddfd5-cea4-423d-b655-2e358b0636a2" src="https://github.com/user-attachments/assets/d7a90f4b-8b65-463a-992c-05df89c75db7" />
+<img width="3120" height="1460" alt="image" src="https://github.com/user-attachments/assets/d67fee53-813e-4822-b992-e6d87f20161a" />
 
