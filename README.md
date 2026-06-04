@@ -1,5 +1,5 @@
 # sentry-feishu-relay
-# 启动
+### 启动
 ```
 docker build -t sentry-feishu-relay .
 
@@ -12,8 +12,8 @@ docker run -d \
   sentry-feishu-relay
 ```
 
-# 验证服务
-# 手动模拟 Sentry 发一条测试请求
+### 验证服务
+### 手动模拟 Sentry 发一条测试请求
 ```
 curl -X POST http://localhost:8080/webhook/sentry \
   -H "Content-Type: application/json" \
@@ -34,10 +34,10 @@ curl -X POST http://localhost:8080/webhook/sentry \
 飞书机器人收到消息说明链路通了，再去 Sentry Alert Rule 点 "Send Test Notification" 验证完整流程。
 ```
 
-# 关闭 Sentry 的内网 IP 限制
+### 关闭 Sentry 的内网 IP 限制
 Sentry 有内置的 IP 安全限制，默认禁止 webhook 发送到私有/内网 IP 段（如 172.x.x.x、10.x.x.x、192.168.x.x），防止 SSRF 攻击。
 
-# 找到 Sentry 的配置文件 sentry.conf.py：
+### 找到 Sentry 的配置文件 sentry.conf.py：
 ```
 # self-hosted 一般在这个位置
 find /data/sentry-self-hosted -name "sentry.conf.py" 2>/dev/null
